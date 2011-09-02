@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30424</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{316D0A51-0D2B-4FD0-B938-2E49B82CC6E8}</ProjectGuid>
+    <ProjectGuid>{39DBEF28-5D06-4E54-ADB0-7944D01132ED}</ProjectGuid>
     <OutputType>Library</OutputType>
     <StartupObject>
     </StartupObject>
     <NoStandardLibraries>false</NoStandardLibraries>
-    <AssemblyName>VisualStudioQueryAddin</AssemblyName>
+    <AssemblyName>VisualStudioQueryPlugin</AssemblyName>
     <DeploymentDirectory>.\bin\</DeploymentDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -21,7 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>4</WarningLevel>
     <IncrementalBuild>false</IncrementalBuild>
-    <DocumentationFile>VisualStudioQueryAddin.xml</DocumentationFile>
+    <DocumentationFile>VisualStudioQueryPlugin.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
@@ -31,10 +31,10 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>4</WarningLevel>
     <IncrementalBuild>false</IncrementalBuild>
-    <DocumentationFile>VisualStudioQueryAddin.xml</DocumentationFile>
+    <DocumentationFile>VisualStudioQueryPlugin.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
-    <RootNamespace>VisualStudioQueryAddin</RootNamespace>
+    <RootNamespace>VisualStudioQueryPlugin</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Extensibility, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -111,16 +111,10 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\..\Users\ssaxena\Documents\Visual Studio 2010\Addins\VisualStudioQueryAddin - For Testing.AddIn">
-      <Link>VisualStudioQueryAddin - For Testing.AddIn</Link>
+    <Content Include="..\..\..\..\..\Users\ssaxena\Documents\Visual Studio 2010\Addins\VisualStudioQueryPlugin - For Testing.AddIn">
+      <Link>VisualStudioQueryPlugin - For Testing.AddIn</Link>
     </Content>
-    <Content Include="VisualStudioQueryAddin.AddIn" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Core\Core.csproj">
-      <Project>{3874C975-9A79-4024-96C6-565D2EFDC8FE}</Project>
-      <Name>Core</Name>
-    </ProjectReference>
+    <Content Include="VisualStudioQueryPlugin.AddIn" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
   <PropertyGroup>
